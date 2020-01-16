@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css"> <!-- это готовые reset-css, которые предлагают сбросить файлы стиля,св-во включить в нормальное состояние -->
+
+
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+<header class="header-page"> <!-- это для стилизации Бэкграунда -->
+<div class="container"> <!-- внутри каждогог цветового блока, весь контент будем оборачивать в класса контейнер, это нам даст эффект единого Врапера, кот.у нас нет-->
+    <div class="header-content"> <!-- это для оформления серединки блока -->
+               
+    <div class="logo"> <a href="">Aditii</a></div>
+    <div class="header-form">
+    <form action="">
+        <input type="text">
+    <button> 
+        <img src="img/search.png" alt="">
+    </button>
+    </form>
+    </div>
+        <div class="cart">
+        <img src="img/cart.png" alt="">
+        <div class="price"> $300 </div>
+        </div>
+        </div>
+</div>
+</header>
+
+<nav class="main-nav">
+    <div class="container">
+        <ul class="main-menu">
+            <li> <a href="#"> Home </a> </li>
+            <li> <!-- внутрь li вставляется еще один список, идея обращения, что вы обращаетесь к этому списку ul, тот который внутри конекретного li-->
+            <a href="#"> Sale </a> 
+            <ul class="main-submenu">
+                <li><a href="#">item1</a></li>
+                <li><a href="#">item2</a></li>
+                <li><a href="#">item3</a></li>
+                <li><a href="#">item4</a></li>
+                <li><a href="#">item5</a></li>
+            </ul>
+            </li>
+            <li> <a href="#"> Handbags </a> </li>
+            <li> <a href="#"> Wallets </a> </li>
+            <li> <a href="#">Accessories</a> </li>
+            <li> <a href="#"> Mens </a> </li>
+            <li> <a href="#"> Store </a> </li>
+            <li> <a href="#"> Shoes </a> </li>
+            <li> <a href="#"> Vintage </a> </li>
+            <li> <a href="#"> Services </a> </li>
+            <li> <a href="#"> Contact us </a> </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="main-slider-block1">
+    <div class="container">
+        <div class="main-slider">
+                
+            <div> <!--for slider-->
+            <div class="main-slide">                <div class="main-slide-img"><img src="img/img1.png" alt="">
+            </div>
+            <div class="main-slide-text">
+            <div class="slide-text-h1"> COWHIDE STANDARD CREW </div>
+            <div class="slide-text-h3">
+            White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </div>
+            <div class="button-shop">                <button> Shop now </button>
+            </div>    
+            </div>
+            </div>
+            </div><!--for slider-->
+            
+            <div> <!--for slider-->
+                <div class="main-slide">                <div class="main-slide-img"><img src="img/img1.png" alt="">
+                </div>
+                <div class="main-slide-text">
+                <div class="slide-text-h1"> COWHIDE STANDARD CREW </div>
+                <div class="slide-text-h3">
+                White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </div>
+                <div class="button-shop">                <button> Shop now </button>
+                </div>    
+                </div>
+                </div>
+                </div><!--for slider-->
+
+                
+        </div> <!-- main-slider -->
+    </div>
+</div>
+
+<!-- это блок для быстрого просмотра -->
+
+<div class="main-slider-block2">
+    <div class="container">
+        <div class="main-slider2">
+    
+            <div class="slider2">
+            <div class="main-slide2-img"><img src="img/img2.png">
+            </div>
+            <div class="main-slide2-text">
+            <div class="text"> BRANDED <p> SHOES </p> </div>
+            <div class="button2">
+            <button> SHOP </button>
+            </div>
+            </div>
+            </div>
+            
+            <div class="slider2">
+            <div class="main-slide2-img"><img src="img/img3.png">
+            </div>
+            <div class="main-slide2-text">
+            <div class="text"> BRANDED <p> TSHIRTS </p>
+            </div>
+            <div class="button2">
+            <button> SHOP </button>
+            </div>
+            </div>
+            </div>
+
+            <div class="slider2"> 
+            <div class="main-slide2-img"><img src="img/img4.png">
+            </div>
+            <div class="main-slide2-text">
+            <div class="text"> BRANDED <p> SHOES </p>
+            </div>
+            <div class="button2">
+            <button> SHOP </button>
+            </div>
+            </div>
+            </div>
+
+        </div>
+    </div>   
+</div> 
+
+<!-- полоса зеленая перед блоком товаров -->
+
+<header class="header-line"> 
+    <div class="container"> 
+        <div class="header-content-line"> 
+        <div class="header-content-line-text">
+            <p>FEATURED PRODUCTS</p>
+        </div>
+        </div>
+    </div>
+</header>
+        
+ <!-- это блок товаров, под зеленой полосой -->
+
+<div class="products-block">
+    <div class="container">
+        <div class="products">
+
+        <div class="product-card">
+        <div class="product-content">
+        <!-- <div class="product-img"><img src="img/img5.png" alt=""></div> --> <!-- закоментировали чтоб было видно как изначально и как стало когда повешали (новинка)(и добавили несколько картинок) -->
+        <div class="mark new">новинка</div>
+        <div class="product-img">
+        <img src="img/img5.png" alt="">
+        <img class="img5"src="img/img3.png" alt="">
+        </div> <!-- при наведении меняются картинки -->
+        <div class="product-name">BRANDAND SHOE</div>
+        <div class="product-price-button">
+        <div class="product-price">300$</div>
+        <div class="button-buynow"> <button> BUY NOW </button></div> 
+        </div>
+        </div>
+        </div>
+
+        <div class="product-card">
+        <div class="product-content">
+        <!-- <div class="product-img"><img src="img/img6.png" alt=""></div> --> <!-- закоментировали чтоб было видно как изначально и как стало когда повешали (топ продаж) -->
+        <div class="mark top"> топ продаж </div>
+        <div class="product-img"><img src="img/img6.png" alt=""></div>
+        <div class="product-name">BRANDED TEES</div>
+        <div class="product-price-button">
+        <div class="product-price">300$</div>
+        <div class="button-buynow"> <button> BUY NOW </button></div> 
+        </div>
+        </div>
+        </div>
+        
+        <div class="product-card">
+        <div class="product-content">
+        <div class="product-img"><img src="img/img7.png" alt=""></div>
+        <div class="product-name">BRANDED SHOE</div>
+        <div class="product-price-button">
+        <div class="product-price">300$</div>
+        <div class="button-buynow"> <button> BUY NOW </button></div> 
+        </div>
+        </div>
+        </div>
+        
+        <div class="product-card">
+        <div class="product-content">
+        <div class="product-img"><img src="img/img8.png" alt=""></div>
+        <div class="product-name">BRANDED SHOE</div>
+        <div class="product-price-button">
+        <div class="product-price">300$</div>
+        <div class="button-buynow"> <button> BUY NOW </button></div> 
+        </div>
+        </div>
+        </div>
+        
+        <div class="product-card">
+        <div class="product-content">
+        <div class="product-img"><img src="img/img9.png" alt=""></div>
+        <div class="product-name">EMS WOMEN  BAG</div>
+        <div class="product-price-button">
+        <div class="product-price">300$</div>
+        <div class="button-buynow"> <button> BUY NOW </button></div> 
+        </div>
+        </div>
+        </div>
+        
+        <div class="product-card">
+        <div class="product-content">
+        <div class="product-img"><img src="img/img10.png" alt=""></div>
+        <div class="product-name">BRANDED CARGOS </div>
+        <div class="product-price-button">
+        <div class="product-price">300$</div>
+        <div class="button-buynow"> <button> BUY NOW </button></div> 
+        </div>
+        </div>
+        </div>
+
+        </div>
+    </div>
+</div> 
+
+    <!-- последний блок футер из двух частей -->
+
+<footer>
+<div>
+<div class="footer-block">
+    <div class="container footer-block">
+
+        <div class="footer1">
+        <div class="footer-name"> FEATURED SALE </div>
+        <div class="footer-content">
+            Alexis Hudson
+            American Apparel
+            Ben Sherman
+            Big Buddha
+            Chanel
+            Christian Audigier
+            Coach
+            Cole Haan
+        </div>
+        </div>
+          
+        <div class="footer1">
+        <div class="footer-name"> MENS STORE </div>
+        <div class="footer-content">
+            Alexis Hudson
+            American Apparel
+            Ben Sherman
+            Big Buddha
+            Chanel
+            Christian Audigier
+            Coach
+            Cole Haan
+        </div>
+        </div>
+    
+        <div class="footer1">
+        <div class="footer-name"> WOMEN STORE </div>
+        <div class="footer-content">
+            Alexis Hudson
+            American Apparel
+            Ben Sherman
+            Big Buddha
+            Chanel
+            Christian Audigier
+            Coach
+            Cole Haan
+        </div>
+        </div>
+        
+        <div class="footer1">
+        <div class="footer-name"> QUICK LINKS </div>
+        <div class="footer-content">
+            Alexis Hudson
+            American Apparel
+            Ben Sherman
+            Big Buddha
+            Chanel
+            Christian Audigier
+            Coach
+            Cole Haan
+        </div>
+        </div>
+        
+    </div>
+</div>
+</div>
+<!-- вторая часть футера -->
+
+<div class="footer-nav">
+    <div class="footer-nav-text"> Copyright (c) 2013 Css Author 
+    </div>
+</div>
+</footer>
+
+<div class="socisl">
+    <div class="butto">
+        social
+    </div>
+    <ul class="list">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ul>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/slick.min.js">
+</script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* таким образом мы делаем сброс стилей, который навязывает браузер */
+}
+.container { /* этот контейнер будет оборачивать контент в каждом цветовом блоке */
+    width: 1024px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header-content { /* это общий родитель для logo, form,cart и прописываем им */
+    display: flex;
+    justify-content: space-between; /* равномерно распредиляет элементы по блоку, первый в начале второй в конце */
+    align-items: center;
+    padding: 20px 0;
+}
+.logo a {
+    color: #3cc3b5;
+    text-decoration: none; /* убрали подчеркивание, которое было изза ссылок */
+    font-family: "Lobster 1.4";
+    font-size: 49px;
+}
+.cart {
+    display: flex;
+    align-items: center; 
+}
+.header-form form {
+    border: 1px solid #e1e1e1;
+}
+.header-form input {
+    border: none;
+    width: 434px;
+} /* ставим вверх и низ, чтоб не было рамки в кнопки и поиск */
+.header-form button {
+    border: none;
+    background-color: transparent;
+}
+.price {
+    color: #a1a1a1;
+    font-family: "Bebas Neue";
+font-size: 33px;
+    font-weight: 600;
+    margin: 0px 0px 0px 20px;
+}
+.main-nav {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+    background-color: #4ccfc1;
+}
+.main-menu {
+    padding: 10px 0;
+    display: flex;
+}
+.main-menu li {
+    text-align: center;
+    flex-grow: 1;
+    position: relative; /* добавили для того что б создать в li подменю li ul */
+}
+.main-menu>li:not(:last-child) { /* сдесь мы поставили знак больше  menu>li и в этом случае означает что li первой вложенности, самый первый дочерний элемент*/
+    border-right: 1px solid #fff;
+}
+.main-menu li ul {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: #4ccfc1;
+    width: 100%;
+    display: none;
+}
+.main-menu li:hover ul { /* блок будет срабатывать при наведении мышки добавляем :hover*/
+    display: block;
+}
+.main-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Bebas Neue";
+font-size: 21px;
+}
+.main-slider-block1 {
+    background-color: #3bc4b5;
+}
+.main-slide {
+    display: flex;  
+}
+.main-slide-img {
+    margin-top: 64px;
+    margin-bottom: 50px;   
+}
+.main-slide-text {
+    color: #ffffff;
+    margin-top: 64px; /* отступ верхний */
+    margin-left: 90px; /* отступ от фото до начало надписи */
+}
+.slide-text-h1 {
+    font-family: "Bebas Neue";
+font-size: 61px;
+    width: 305px;
+}
+.slide-text-h3 {
+    font-family: "Open Sans";
+    font-size: 17px;
+    margin-top: 20px;
+    width: 402px;
+    line-height: 2.0;
+}
+.button-shop button {
+    background: #3bc4b5;
+    color: white;
+    width: 139px;
+    height: 46px;
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-family: "Bebas Neue";
+font-size: 27px;
+}
+.main-slider2 {
+    display: flex;  
+}
+.slider2 {
+ display: flex; 
+ flex-basis: 33.3333%; 
+flex-shrink: 0; 
+padding: 0 25px;
+justify-content: space-between;
+}
+.main-slide2-text {
+color: #afafaf;
+font-family: "Bebas Neue";
+font-size: 19px;
+padding: 40px 0 20px;
+}
+.text {
+    padding-bottom: 15px;
+}
+.button2 button {
+    width: 60px;
+    height: 28px;
+    color: #ffffff;
+    background-color: #3cc395;
+    border-radius: 5px;
+}
+.main-slide2-img {
+    margin-top: 20px;
+}
+.header-line {
+    background-color: #39c1b1;
+    height: 68px;
+    margin-top: 15px;
+}
+.header-content-line-text {
+    color: #ffffff;
+    font-family: "Bebas Neue";
+font-size: 31px;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-card { /* это блок отвечает за структурную единицу, за ширину и за отступы */
+    /* width: 33.3333%; закоментировали,потому что есть flex-basis: 33.3333%;*/
+    flex-basis: 33.3333%;/* чтоб размещались 3 шт. */
+    flex-shrink: 0; /* мы отключаем */
+    padding: 0 25px;
+    margin-bottom: 40px;
+}
+.product-content { /* это блок отвечает за контент, за рамочку и то что в середине рамочки  и выравниваем все по центру*/
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: column; /* у нас перекрутилась ось */
+    align-items: center; /* выравнивание по поперечной оси */
+    position: relative;
+}
+.product-name {
+    color: #afafaf;
+    font-family: "Bebas Neue";
+font-size: 27px;
+}
+.product-price-button{
+    display: flex;
+}
+.product-price {
+    color: #afafaf;
+    font-family: "Bebas Neue";
+font-size: 27px;
+    font-weight: 400;
+    /* margin: 0px 0px 0px 20px; для себя не могу актуально ли это*/
+}
+.button-buynow button {
+    width: 100%;
+    height: 34px;
+    background-color: #3cc395;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-left: 12px;
+    font-family: "Bebas Neue";
+font-size: 20px;
+}
+.mark{
+color: #fff;
+padding: 5px 10px;
+border-radius: 10px;
+position: absolute;
+top: 10px;
+left: 5px;
+z-index: 100;
+}
+.new {
+    background-color: blueviolet;
+}
+.top{
+    background-color: yellow;
+}
+.product-img {
+    height: 160px;
+    width: 100%;
+    position: relative;
+}
+.product-img img { /* показывает к каким картинкам будет применяться и подгоняться под блок */
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down; /* работает также как и background-size. это св-во и нижнее для того чтобы картинка всегда помещалась в блок */
+    object-position: center;
+}
+.product-img .img5{
+top: 0;
+left: 0;
+background-color: #fff;
+position: absolute;
+display: none; /* прячем картинку */
+}
+.product-img:hover .img5 { /* савится тогда :hover это означает, что блок когда будет срабатывать только тогда, когда мы на ведем мышкой на этот элемент*/
+display: block;
+}
+.footer-block {
+background-color: #3cc3b5;
+display: flex;
+}
+.footer-name {
+color: #ffffff;
+font-family: "Bebas Neue";
+font-size: 27px;
+display: flex;
+}
+
+.footer-content {
+color: #ffffff;
+font-family: "Open Sans";
+font-size: 15px;
+display: flex;
+flex-direction: column;
+}
+
+/* .footer1{
+display: flex; 
+flex-basis: 25%; 
+justify-content: space-between;
+}   */
+
+
+/* .footer-content{
+    display: flex;
+    flex-direction: column;
+justify-content: space-between;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+} */
+.footer-nav{
+    background-color: #2da89b;
+    color: #ffffff;
+    font-family: "Open Sans";
+font-size: 15px;
+    text-align: center; 
+}
